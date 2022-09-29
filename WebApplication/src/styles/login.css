@@ -1,0 +1,17 @@
+.login-container {
+  width: 500px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.login-container h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  text-align: center;
+}
+.login-container .form-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}/*# sourceMappingURL=login.css.map */

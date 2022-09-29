@@ -1,0 +1,22 @@
+$font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.login-container {
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3 {
+        font-family: $font-stack;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .form-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
