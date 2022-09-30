@@ -14,7 +14,9 @@ public class TaskServiceHashMap implements TaskService {
 
     public TaskServiceHashMap () {
         Task task1 = new Task("10", "Tarea 1", "Realizar una investigación acerca de los términos seleccionados", "TODO", "Pablo López", "29/09/2022", "28/09/2022");
+        Task task2 = new Task("20", "Tarea 2", "Realizar un informe sobre los términos especificados", "TODO", "Pablo López", "30/09/2022", "25/09/2022");
         tasks.put(task1.getId(), task1);
+        tasks.put(task2.getId(), task2);
     }
 
     @Override

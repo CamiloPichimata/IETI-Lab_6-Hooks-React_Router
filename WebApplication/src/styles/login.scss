@@ -4,13 +4,14 @@ $font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .login-container {
     width: 500px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.8);
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 
     h3 {
         font-size: 40px;
+        font-weight: bold;
         text-align: center;
     }
 

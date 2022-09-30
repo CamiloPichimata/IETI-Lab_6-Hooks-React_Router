@@ -1,6 +1,7 @@
 .h2-title {
   font-size: 40px;
   font-weight: 700;
+  color: whitesmoke;
 }
 
 .all-centered {
@@ -8,4 +9,38 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+}
+
+.tasks-container #table-tasks {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 90%;
+  font-size: 16px;
+}
+.tasks-container #table-tasks table {
+  width: 100%;
+  text-align: center;
+}
+.tasks-container #table-tasks table thead {
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.tasks-container #table-tasks table thead th {
+  padding: 10px;
+  vertical-align: middle;
+}
+.tasks-container #table-tasks table tbody .even {
+  background-color: rgb(40, 40, 40);
+}
+.tasks-container #table-tasks table tbody .odd {
+  background-color: rgb(70, 70, 70);
+}
+.tasks-container #table-tasks table tbody td {
+  vertical-align: top;
+  padding: 10px;
+}
+.tasks-container #table-tasks .tasklist-state {
+  padding-top: 20px;
+  font-weight: 100;
 }/*# sourceMappingURL=tasks.css.map */

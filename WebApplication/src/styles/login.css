@@ -1,6 +1,7 @@
 .h2-title {
   font-size: 40px;
   font-weight: 700;
+  color: whitesmoke;
 }
 
 .all-centered {
@@ -8,17 +9,19 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .login-container {
   width: 500px;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.8);
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .login-container h3 {
   font-size: 40px;
+  font-weight: bold;
   text-align: center;
 }
 .login-container .form-container {
