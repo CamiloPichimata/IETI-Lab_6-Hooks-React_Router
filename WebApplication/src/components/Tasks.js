@@ -56,7 +56,7 @@ export default function Tasks() {
 
     return (
         <div>
-            <h2>Tasks Page</h2>
+            <h2 className='h2-title'>Tasks Page</h2>
             <div id="tasksTable">
                 <table>
                     <thead>

@@ -9,33 +9,35 @@ import '../styles/routes.css';
 export default function Routes() {
     return (
         <Router>
-            <div>
-                <header>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/about">About</Link>
-                            </li>
-                            <li>
-                                <Link to="/tasks">Tasks</Link>
-                            </li>
-                            <li>
-                                <Link to="/login">Login</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/tasks">Tasks</Link>
+                        </li>
+                        <li>
+                            <Link to="/login">Login</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-                <Routes_>
-                    <Route path="/about" element={<About />} />
-                    <Route path="/tasks" element={<Tasks />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/" element={<Home />} />
-                </Routes_>
-            </div>
+            <main>
+                <div className='container'>
+                    <Routes_>
+                        <Route path="/about" element={<About />} />
+                        <Route path="/tasks" element={<Tasks />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/" element={<Home />} />
+                    </Routes_>
+                </div>
+            </main>
         </Router>
     );
 }

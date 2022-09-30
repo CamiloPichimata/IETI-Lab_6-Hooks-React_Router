@@ -1,1 +1,31 @@
 @import 'general';
+
+.about-container{
+    max-width: 75%;
+
+    .about-title {
+        color: blue;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-text {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .text-justified{
+        text-align: justify;
+    }
+
+    .text-aling-right {
+        text-align: right;
+        margin: 0px;
+    }
+}

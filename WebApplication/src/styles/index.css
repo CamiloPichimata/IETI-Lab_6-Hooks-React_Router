@@ -1,12 +1,6 @@
-.container {
-  background: url(http://wallpapercave.com/wp/UoQbFHi.jpg) no-repeat center center fixed;
-  background-size: cover;
-  align-items: center;
-  margin-top: 100px;
-  margin-left: 100px;
-}
-
 body {
   background: url(http://wallpapercave.com/wp/UoQbFHi.jpg) no-repeat center center fixed;
   background-size: cover;
+  color: whitesmoke !important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }/*# sourceMappingURL=index.css.map */

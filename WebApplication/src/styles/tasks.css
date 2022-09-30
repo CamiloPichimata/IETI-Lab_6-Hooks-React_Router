@@ -1,3 +1,11 @@
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.h2-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.all-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }/*# sourceMappingURL=tasks.css.map */

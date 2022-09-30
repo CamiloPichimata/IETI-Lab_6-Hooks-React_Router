@@ -1,1 +1,28 @@
 @import 'general';
+
+.home-container {
+    height: 100%;
+
+    p {
+        text-align: center;
+    }
+
+    .large-text {
+        font-size: 50px;
+        margin: 0px;
+        font-weight: 700;
+    }
+
+    .little-text {
+        font-size: 25px;
+        margin: 0px;
+        padding-bottom: 15px;
+        color:blue;
+//        font-weight: 500;
+    }
+
+    .home-text-centered {
+        background: rgba(0,0,0,0.6);
+        margin-top: 5%;
+    }
+}

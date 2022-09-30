@@ -8,26 +8,29 @@ header {
 nav {
   float: left;
 }
-
 nav ul {
   list-style: none;
   overflow: hidden;
+  margin: 0px;
 }
-
 nav ul li {
   float: left;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
 }
-
 nav ul li a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #004cff;
   text-decoration: none;
 }
-
 nav ul li:hover {
   background: rgb(165, 163, 163);
   color: #fff;
+}
+
+main {
+  padding: 60px;
+}
+main .container {
+  height: 80vh;
 }/*# sourceMappingURL=routes.css.map */
