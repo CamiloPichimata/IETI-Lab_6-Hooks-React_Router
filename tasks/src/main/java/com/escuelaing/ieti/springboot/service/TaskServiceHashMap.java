@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-@Service
+//@Service
 public class TaskServiceHashMap implements TaskService {
     private HashMap<String, Task> tasks = new HashMap<String, Task>();
 
