@@ -16,7 +16,7 @@ export default function Tasks() {
  
         var html = "";
         $.each(data, function(index, value){
-            html += '<tr class="'+((index===0) ? 'even' : 'odd')+'">';
+            html += '<tr class="'+((index%2===0) ? 'even' : 'odd')+'">';
             html +=     '<td>'+value.id+'</td>';
             html +=     '<td>'+value.name+'</td>';
             html +=     '<td>'+value.description+'</td>';
