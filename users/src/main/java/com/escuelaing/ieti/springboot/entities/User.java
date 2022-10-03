@@ -2,22 +2,22 @@ package com.escuelaing.ieti.springboot.entities;
 
 import com.escuelaing.ieti.springboot.dto.UserDto;
 import com.escuelaing.ieti.springboot.enums.RoleEnum;
-import org.springframework.data.annotation.Id;
+/*import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Document;*/
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 import java.time.LocalDate;
 import java.util.List;
 
-@Document
+//@Document
 public class User {
-    @Id
+    //@Id
     private String id;
 
     private String name;
 
-    @Indexed(unique = true)
+    //@Indexed(unique = true)
     private String email;
 
     private String lastName;
@@ -97,12 +97,15 @@ public class User {
         return roles;
     }
 
+    public void setRoles(List<RoleEnum> roles) {
+        this.roles = roles;
+    }
+
     public void toEntity(UserDto userDto) {
         this.id = userDto.getId();
         this.name = userDto.getName();
         this.email = userDto.getEmail();
         this.lastName = userDto.getLastName();
-        this.createdAt = LocalDate.now().toString();
         this.passwordHash = BCrypt.hashpw(userDto.getPassword(), BCrypt.gensalt());
     }
 }

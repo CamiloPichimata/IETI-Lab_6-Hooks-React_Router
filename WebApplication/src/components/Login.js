@@ -1,29 +1,35 @@
 import React, {useState} from 'react';
-//import {redirect} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {Form, Input, Button} from 'antd';
 //import useLocalStorage, { writeStorage } from '@rehooks/local-storage';
-import md5 from 'md5';
 import 'antd/dist/antd.min.css';
+import { useAuth } from '../utils/auth';
 import '../styles/login.css';
 
 function Login() {
-    const [email, setEmail] = useState(null);
-    const [password, setPassword] = useState(null);
+    const [userEmail, setUserEmail] = useState(null);
+    const auth = useAuth();
+    const navigate = useNavigate();
     
+    const redirect = () => {
+        if (auth.userEmail != null) {
+            navigate("/");
+        } 
+        // else {
+        //     alert("Login failed...\n Please check the specified credentials")
+        // }
+    }
+
     const onFinish = (values) => {
-        console.log('Success:', values);
-        setEmail(values.email);
-        setPassword(md5(values.password));
-
-        console.log("Email: " + email + " -> " + "Password: " + password);
-
-        //redirect("/home");
-        window.location = '/';
+        console.log('Login Values:', values);
+        auth.login(values.email, values.password, redirect);
+        setUserEmail(values.email);
+        console.log("Login -> userEmail:", userEmail);
     };
      
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
-        alert("Login failed");
+        alert("Login failed:\nPlease fill in all the fields...");
     };
 
     return (

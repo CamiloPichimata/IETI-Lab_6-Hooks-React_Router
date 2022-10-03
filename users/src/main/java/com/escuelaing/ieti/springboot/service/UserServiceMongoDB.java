@@ -1,4 +1,4 @@
-package com.escuelaing.ieti.springboot.service;
+/*package com.escuelaing.ieti.springboot.service;
 
 import com.escuelaing.ieti.springboot.entities.User;
 import com.escuelaing.ieti.springboot.repository.UserRepository;
@@ -89,3 +89,4 @@ public class UserServiceMongoDB implements UserService {
         return userRepository.findByEmail(email);
     }
 }
+*/

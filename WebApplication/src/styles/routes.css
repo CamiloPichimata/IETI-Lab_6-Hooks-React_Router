@@ -7,11 +7,13 @@ header {
 
 nav {
   float: left;
+  width: 100%;
 }
 nav ul {
   list-style: none;
   overflow: hidden;
   margin: 0px;
+  padding-right: 40px;
 }
 nav ul li {
   float: left;
@@ -20,12 +22,30 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 10px;
-  color: #004cff;
+  color: blue;
   text-decoration: none;
 }
-nav ul li:hover {
-  background: rgb(165, 163, 163);
-  color: #fff;
+nav ul li a:hover {
+  background-color: darkblue;
+  color: deepskyblue;
+}
+nav ul .logout {
+  float: right;
+  font-size: 20px;
+  padding: 4px;
+}
+nav ul .logout button {
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: blue;
+}
+nav ul .logout button:Hover {
+  background-color: blue;
+  color: deepskyblue;
 }
 
 main {

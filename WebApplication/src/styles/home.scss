@@ -17,8 +17,12 @@
         font-size: 25px;
         margin: 0px;
         padding-bottom: 15px;
-        color:blue;
-//        font-weight: 500;
+        color: blue;
+
+        &:hover {
+            text-decoration: underline;
+            color: deepskyblue;
+        }
     }
 
     .home-text-centered {

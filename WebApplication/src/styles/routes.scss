@@ -6,12 +6,14 @@ header {
 }
 
 nav {
-    float: left;
+    float:left;
+    width: 100%;
 
     ul {
         list-style: none;
         overflow: hidden; 
         margin: 0px;
+        padding-right: 40px;
 
         li {
             float: left;
@@ -20,14 +22,35 @@ nav {
             a {
                 display: block;
                 padding: 10px;
-                color: #004cff;
+                color: blue;
                 text-decoration: none;
+
+                &:hover {
+                    background-color:darkblue;
+                    color: deepskyblue;
+                }
             }
         }
 
-        li:hover {
-            background: rgb(165, 163, 163);
-            color: #fff;
+        .logout {
+            float: right;
+            font-size: 20px;
+            padding: 4px;
+
+            button {
+                background-color: transparent;
+                border: 2px solid blue;
+                border-radius: 10px;
+                padding: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: blue;
+
+                &:Hover {
+                    background-color: blue;
+                    color: deepskyblue;
+                }
+            }
         }
     }
 }

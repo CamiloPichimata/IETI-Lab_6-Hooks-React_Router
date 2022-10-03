@@ -31,10 +31,10 @@
   vertical-align: middle;
 }
 .tasks-container #table-tasks table tbody .even {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(70, 70, 70);
 }
 .tasks-container #table-tasks table tbody .odd {
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(40, 40, 40);
 }
 .tasks-container #table-tasks table tbody td {
   vertical-align: top;

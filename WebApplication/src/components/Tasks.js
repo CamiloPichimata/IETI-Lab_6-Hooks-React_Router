@@ -45,7 +45,7 @@ export default function Tasks() {
 
     return (
         <div className="tasks-container">
-            <h2 className='h2-title'>Tasks Page</h2>
+            <h2 className='h2-title'>TaskApp</h2>
             <div className="all-centered">
                 <div id="table-tasks">
                     <table>

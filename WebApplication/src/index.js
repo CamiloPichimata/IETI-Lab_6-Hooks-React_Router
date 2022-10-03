@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Routes from './routes/Routes'
+import { AuthProvider } from './utils/auth';
 import './styles/index.css';
 
 class Index extends React.Component {
@@ -15,7 +16,9 @@ class Index extends React.Component {
     
     render() {
         return (
-            <Routes />
+            <AuthProvider>
+                <Routes />
+            </AuthProvider>
         );
     }
 }
