@@ -8,7 +8,7 @@ export default function About() {
             <div className='about-text'>
                 <h3 className='about-title'>About</h3>
                 <p className='text-justified'>Application implemented during the development of the laboratories of the subject <span>Inovación y Emprendimiento con Tecnologías de Información (IETI)</span> by <span>Camilo Andrés Pichimata Cárdenas</span></p>
-                <p className='text-aling-right'>Septiember 2022</p>
+                <p className='text-aling-right'>September 2022</p>
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ Al API Tasks se le tuvo que agregar la conexión con una base de datos MongoDB d
 
 A continuación, se presenta la interfaz de la aplicación y su funcionamiento:
 
-### Instalación:
+### Instalación
 Para la ejecución de la aplicación después de clonar el respositorio se deben ejecutar por separado la aplicación `Tasks` y la aplicación `Users`, debido a que en este caso ambas aplicaciones se implementaron usando Spring Boot, por defecto estas buscan correr en el mismo puerto **8080**, para evitar conflictos en el archivo **aplication.properties** de `users` se incluyó la siguiente línea
 
 ```
