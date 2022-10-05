@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 import useSWR from 'swr';
 import axios from 'axios';
 import $ from "jquery";
@@ -6,14 +6,10 @@ import '../styles/tasks.css';
 
 export default function Tasks() {
 
-    //const [tableStyleRow, setTableStyleRow] = useState(null);
-
     const url = 'http://localhost:8080/api/v2/tasks/';
 
     function mapTasks(data) {
-
-        //setTableStyleRow((tableStyleRow==='even') ? 'odd' : 'even');
- 
+        console.info("Mapping tasks...");
         var html = "";
         $.each(data, function(index, value){
             html += '<tr class="'+((index%2===0) ? 'even' : 'odd')+'">';
@@ -29,17 +25,17 @@ export default function Tasks() {
         $('.table-list-tasks').html(html);
     }
 
-    const fetcherTasks = () => axios.get(url).then(res => res.data);
+    const fetcherTasks = () => axios.get(url).then(res => res.data).then((data) => {mapTasks(data); return data;});
 
     function getTasks() {
-        const { data, error } = useSWR(url, fetcherTasks)
+        const { data, error } = useSWR(url, fetcherTasks);
 
         if (error) {
             console.log("error: " + error);
             return <div className="tasklist-state">failed to load</div>
         }
         if (!data) return <div className="tasklist-state">loading...</div>
-        mapTasks(data)
+
         return <div className="tasklist-state">Tasklist updated!</div>
     }
 

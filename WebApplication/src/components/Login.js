@@ -1,30 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import {Form, Input, Button} from 'antd';
-//import useLocalStorage, { writeStorage } from '@rehooks/local-storage';
 import 'antd/dist/antd.min.css';
 import { useAuth } from '../utils/auth';
 import '../styles/login.css';
 
 function Login() {
-    const [userEmail, setUserEmail] = useState(null);
     const auth = useAuth();
     const navigate = useNavigate();
     
     const redirect = () => {
-        if (auth.userEmail != null) {
-            navigate("/");
-        } 
+        navigate("/tasks");
+        // if (auth.token != null) {
+        //     navigate("/tasks");
+        // }
         // else {
-        //     alert("Login failed...\n Please check the specified credentials")
+        //      alert("Login failed...\n Please check the specified credentials")
         // }
     }
 
     const onFinish = (values) => {
-        console.log('Login Values:', values);
         auth.login(values.email, values.password, redirect);
-        setUserEmail(values.email);
-        console.log("Login -> userEmail:", userEmail);
     };
      
     const onFinishFailed = (errorInfo) => {

@@ -1,4 +1,4 @@
-/*package com.escuelaing.ieti.springboot.service;
+package com.escuelaing.ieti.springboot.service;
 
 import com.escuelaing.ieti.springboot.entities.User;
 import com.escuelaing.ieti.springboot.repository.UserRepository;
@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -89,4 +88,3 @@ public class UserServiceMongoDB implements UserService {
         return userRepository.findByEmail(email);
     }
 }
-*/

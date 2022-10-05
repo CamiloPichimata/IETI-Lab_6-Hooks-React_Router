@@ -2,22 +2,22 @@ package com.escuelaing.ieti.springboot.entities;
 
 import com.escuelaing.ieti.springboot.dto.UserDto;
 import com.escuelaing.ieti.springboot.enums.RoleEnum;
-/*import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;*/
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 import java.time.LocalDate;
 import java.util.List;
 
-//@Document
+@Document
 public class User {
-    //@Id
+    @Id
     private String id;
 
     private String name;
 
-    //@Indexed(unique = true)
+    @Indexed(unique = true)
     private String email;
 
     private String lastName;
