@@ -66,7 +66,7 @@ Finalmente si damos click en el botón _Logout_ cerraremos la cesión, pero en e
 
 ![](img/about-2.png)
 
-# Laboratorio 7: Bruenas practicas de Código
+# Laboratorio 7: Buenas practicas de Código
 
 ## Inovación y Emprendimiento con Tecnologías de Información
 
