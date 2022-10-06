@@ -1,7 +1,7 @@
 # Laboratorio 6: Hooks / React Router
 ## Inovación y Emprendimiento con Tecnologías de Información
 #### Camilo Andrés Pichimata Cárdenas
-##### Agosto del 2022
+##### Septiembre del 2022
 
 
 ## Desarrollo
