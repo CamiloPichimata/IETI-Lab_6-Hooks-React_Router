@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes as Routes_, Route, Link, useNavigate } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import About from '../components/About';
 import Home from '../components/Home';
 import Login from '../components/Login';
 import Tasks from '../components/Tasks';
 import { useAuth } from '../utils/auth';
 import '../styles/routes.css';
-import { Button } from 'antd';
 import RequiereAuth from '../utils/RequireAuth';
 
-export default function Routes() {
+export default function AppRoutes() {
     const auth = useAuth();
 
     return (
@@ -42,12 +41,12 @@ export default function Routes() {
 
             <main>
                 <div className='container'>
-                    <Routes_>
+                    <Routes>
                         <Route path="/about" element={<About />} />
                         <Route path="/tasks" element={<RequiereAuth><Tasks /></RequiereAuth>} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/" element={<Home />} />
-                    </Routes_>
+                    </Routes>
                 </div>
             </main>
         </Router>

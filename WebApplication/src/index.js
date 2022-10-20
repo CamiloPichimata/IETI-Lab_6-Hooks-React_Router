@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Routes from './routes/Routes'
+import AppRoutes from './routes/Routes'
 import { AuthProvider } from './utils/auth';
 import './styles/index.css';
+import * as serviceWorker from './serviceWorkerRegistration';
 
 class Index extends React.Component {
 
@@ -17,7 +18,7 @@ class Index extends React.Component {
     render() {
         return (
             <AuthProvider>
-                <Routes />
+                <AppRoutes />
             </AuthProvider>
         );
     }
@@ -27,3 +28,5 @@ class Index extends React.Component {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Index />);
+
+serviceWorker.register();
