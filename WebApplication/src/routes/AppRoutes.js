@@ -16,7 +16,7 @@ export default function AppRoutes() {
 
     return (
         <Router>
-            <header className={`${state.isDarkMode ? "dark" : "light"}-theme`}>
+            <header className={`header-${state.isDarkMode ? "dark" : "light"}-theme`}>
                 <nav>
                     <ul>
                         <li>
@@ -43,7 +43,7 @@ export default function AppRoutes() {
                         </div>
                         <div className='navBar-right'>
                             <button 
-                                className={`button-${state.isDarkMode ? "dark" : "light"} theme-button`} 
+                                className={`button-${state.isDarkMode ? "light" : "dark"} theme-button`} 
                                 onClick={() => {
                                     if (state.isDarkMode) {
                                         dispatch("SET_LIGHT_MODE");
@@ -52,7 +52,7 @@ export default function AppRoutes() {
                                     }
                                 }}
                             >
-                                {state.isDarkMode ? "Dark" : "Light"} Theme
+                                {state.isDarkMode ? "Light" : "Dark"} Theme
                             </button>
                         </div>
                     </ul>

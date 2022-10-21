@@ -1,8 +1,15 @@
 header {
-  background: rgba(0, 0, 0, 0.8);
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+.header-light-theme {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.header-dark-theme {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 nav {
@@ -43,10 +50,6 @@ nav ul .navBar-right button {
   border: 2px solid blue;
   color: blue;
 }
-nav ul .navBar-right button:Hover {
-  color: deepskyblue;
-  border-color: deepskyblue;
-}
 nav ul .navBar-right .logout-button:Hover {
   background-color: blue;
   border-color: blue;
@@ -54,8 +57,17 @@ nav ul .navBar-right .logout-button:Hover {
 nav ul .navBar-right .button-dark {
   background: black;
 }
+nav ul .navBar-right .button-dark:Hover {
+  color: deepskyblue;
+  border-color: deepskyblue;
+}
 nav ul .navBar-right .button-light {
   background: white;
+}
+nav ul .navBar-right .button-light:Hover {
+  color: darkblue;
+  border-color: darkblue;
+  background: whitesmoke;
 }
 
 main {

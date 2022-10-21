@@ -1,8 +1,15 @@
 header {
-    background: rgba(0,0,0,0.8);
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+.header-light-theme {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header-dark-theme {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 nav {
@@ -45,11 +52,6 @@ nav {
                 padding-right: 10px;
                 border: 2px solid blue;
                 color: blue;
-
-                &:Hover {
-                    color: deepskyblue;
-                    border-color: deepskyblue;
-                }
             }
 
             .logout-button {
@@ -61,10 +63,21 @@ nav {
 
             .button-dark {
                 background: black;
+                
+                &:Hover {
+                    color: deepskyblue;
+                    border-color: deepskyblue;
+                }
             }
             
             .button-light {
                 background: white;
+                
+                &:Hover {
+                    color: darkblue;
+                    border-color: darkblue;
+                    background: whitesmoke;
+                }
             }
         }
     }
