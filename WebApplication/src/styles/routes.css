@@ -29,23 +29,33 @@ nav ul li a:hover {
   background-color: darkblue;
   color: deepskyblue;
 }
-nav ul .logout {
+nav ul .navBar-right {
   float: right;
   font-size: 20px;
   padding: 4px;
 }
-nav ul .logout button {
+nav ul .navBar-right button {
   background-color: transparent;
-  border: 2px solid blue;
   border-radius: 10px;
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;
+  border: 2px solid blue;
   color: blue;
 }
-nav ul .logout button:Hover {
-  background-color: blue;
+nav ul .navBar-right button:Hover {
   color: deepskyblue;
+  border-color: deepskyblue;
+}
+nav ul .navBar-right .logout-button:Hover {
+  background-color: blue;
+  border-color: blue;
+}
+nav ul .navBar-right .button-dark {
+  background: black;
+}
+nav ul .navBar-right .button-light {
+  background: white;
 }
 
 main {

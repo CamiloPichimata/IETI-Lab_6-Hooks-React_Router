@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import About from '../components/About';
 import Home from '../components/Home';
@@ -7,13 +7,16 @@ import Tasks from '../components/Tasks';
 import { useAuth } from '../utils/auth';
 import '../styles/routes.css';
 import RequiereAuth from '../utils/RequireAuth';
+import { ThemeContext } from '../ThemeContext';
 
 export default function AppRoutes() {
     const auth = useAuth();
 
+    const { state, dispatch} = useContext(ThemeContext);
+
     return (
         <Router>
-            <header>
+            <header className={`${state.isDarkMode ? "dark" : "light"}-theme`}>
                 <nav>
                     <ul>
                         <li>
@@ -31,10 +34,27 @@ export default function AppRoutes() {
                             </li>
                         )}
                         {auth.userEmail && (
-                            <div className='logout'>
+                            <div className='navBar-right'>
                                 <button className='logout-button' onClick={() => auth.logout()}>Logout</button>
                             </div>
                         )}
+                        <div className='navBar-right'>
+                            <button className='logout-button' onClick={() => auth.logout()}>Logout</button>
+                        </div>
+                        <div className='navBar-right'>
+                            <button 
+                                className={`button-${state.isDarkMode ? "dark" : "light"} theme-button`} 
+                                onClick={() => {
+                                    if (state.isDarkMode) {
+                                        dispatch("SET_LIGHT_MODE");
+                                    } else {
+                                        dispatch("SET_DARK_MODE");
+                                    }
+                                }}
+                            >
+                                {state.isDarkMode ? "Dark" : "Light"} Theme
+                            </button>
+                        </div>
                     </ul>
                 </nav>
             </header>

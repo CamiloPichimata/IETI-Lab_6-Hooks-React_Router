@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppRoutes from './routes/Routes'
+import App from './App';
 import { AuthProvider } from './utils/auth';
 import './styles/index.css';
 import * as serviceWorker from './serviceWorkerRegistration';
@@ -18,7 +18,7 @@ class Index extends React.Component {
     render() {
         return (
             <AuthProvider>
-                <AppRoutes />
+                <App />
             </AuthProvider>
         );
     }

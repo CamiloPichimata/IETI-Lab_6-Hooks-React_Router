@@ -32,24 +32,39 @@ nav {
             }
         }
 
-        .logout {
+        .navBar-right {
             float: right;
             font-size: 20px;
             padding: 4px;
 
             button {
                 background-color: transparent;
-                border: 2px solid blue;
                 border-radius: 10px;
                 padding: 4px;
                 padding-left: 10px;
                 padding-right: 10px;
+                border: 2px solid blue;
                 color: blue;
 
                 &:Hover {
-                    background-color: blue;
                     color: deepskyblue;
+                    border-color: deepskyblue;
                 }
+            }
+
+            .logout-button {
+                &:Hover {
+                    background-color: blue;
+                    border-color: blue;
+                }
+            }
+
+            .button-dark {
+                background: black;
+            }
+            
+            .button-light {
+                background: white;
             }
         }
     }
