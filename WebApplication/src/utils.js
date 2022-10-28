@@ -1,4 +1,4 @@
-export  const  initialState = { isDarkMode:  false };
+export  const  initialState = { isDarkMode:  true };
 
 export  const  themeReducer = (state, action) => {
 	switch (action) {
